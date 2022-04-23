@@ -1,7 +1,6 @@
 require 'csv'
 
 class Hangman
-    attr_reader :guessed_letters
     def initialize
         @word = generate_word()
         @correct_letters = set_dashes(@word)
